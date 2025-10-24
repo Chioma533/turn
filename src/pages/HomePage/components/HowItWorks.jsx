@@ -13,16 +13,16 @@ import { BiFirstAid } from "react-icons/bi";
 const HowItWorks = () => {
     return (
         <section className='bg-[#485d92]'>
-            <div className='max-w-7xl mx-auto px-8 py-15'>
+            <div className='max-w-7xl mx-auto px-2 md:px-8 py-15'>
                 <h2 className='text-4xl font-bold text-center mb-4'>How It Works</h2>
-                <p className='text-xl leading-tight text-center font-medium text-muted foreground mb-12'>
+                <p className='text-medium md:text-2xl leading-tight text-center text-muted foreground mb-12'>
                     You need experience to get hired, but you need to get hired to gain experience.
-                    TURN breaks <br />
+                    TURN breaks
                     the cycle by providing real world experience by interactive simulations.
                 </p>
-                <div className=' grid lg:grid-cols-2 mb-10 gap-40'>
+                <div className=' grid md:grid-cols-2 mb-10 gap-10 md:gap-40'>
                     <div className=''>
-                        <div className="bg-[#ffffff] rounded-lg px-10 py-4 shadow-lg shadow-accent-foreground">
+                        <div className="bg-[#ffffff] rounded-lg px-5 md:px-10 py-4 shadow-lg shadow-accent-foreground">
                             <h1 className='font-medium text-2xl mb-4'>Traditional Path</h1>
                             <div className='px-5 h-72 bg-cover font-bold rounded-lg overflow-hidden bg-no-repeat' style={{
                                 backgroundImage: `url(${TradPath})`
@@ -42,7 +42,7 @@ const HowItWorks = () => {
                         </div>
                     </div>
                     <div>
-                        <div className="bg-[#ffffff] rounded-lg px-10 py-4 shadow-lg shadow-accent-foreground">
+                        <div className="bg-[#ffffff] rounded-lg md:px-10 py-4 px-5 shadow-lg shadow-accent-foreground">
                             <h1 className='font-medium text-2xl mb-4'>Our Solution</h1>
                             <div className='px-5 h-72 bg-center font-bold rounded-lg overflow-hidden bg-no-repeat' style={{
                                 backgroundImage: `url(${TradImage})`
@@ -67,8 +67,8 @@ const HowItWorks = () => {
                 {/* Steps to career */}
                 <div className='py-10'>
                     <div className='text-center'>
-                        <h2 className="font-bold text-4xl capitalize mb-3">Your 3 steps to a career</h2>
-                        <p className='text-2xl text-gray-300 mb-10'>A clear path to break into career and land your dream role</p>
+                        <h2 className="font-bold text-3xl md:4xl capitalize mb-3">Your 3 steps to a career</h2>
+                        <p className='text-lg md:text-2xl text-gray-300 mb-10'>A clear path to break into career and land your dream role</p>
                     </div>
 
                     <div className='grid md:grid-cols-3 gap-10'>

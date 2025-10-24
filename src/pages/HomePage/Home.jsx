@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection'
 import HowItWorks from './components/HowItWorks'
 import AboutUs from './components/AboutUs'
 import OurFeatures from './components/OurFeatures'
+import Footer from './components/Footer'
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <HowItWorks />
             <AboutUs />
             <OurFeatures />
+            <Footer />
         </div>
     )
 }

@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from '../../../assets/images/turn-logo-transparent.png'
 import {Button} from '../../../components/ui/button'
+
 const Navigation = () => {
+    const [isOpen, setIsOpen] = useState(false)
 
     const navItems = [
         { name: 'Home', href: '#home' },
