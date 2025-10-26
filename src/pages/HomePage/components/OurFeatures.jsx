@@ -11,22 +11,22 @@ const OurFeatures = () => {
         {
             icon: <FiMessageSquare />,
             title: 'AI Teacher',
-            description: 'Learn from an AI coach that adapts to your pace and provides personalized feedback on your project decisions',
+            description: 'Learn from an AI coach that adapts to your pace and provides personalized feedback on your project decisions.',
         },
         {
             icon: <FiBarChart2 />,
-            title: 'AI Teacher',
-            description: 'Learn from an AI coach that adapts to your pace and provides personalized feedback on your project decisions',
+            title: 'Practical Simulations',
+            description: 'Work through real-world scenarios from various industries to build practical experience that translates to the job market.',
         },
         {
             icon: <RxFileText />,
-            title: 'AI Teacher',
-            description: 'Learn from an AI coach that adapts to your pace and provides personalized feedback on your project decisions',
+            title: 'Automated Portfolio',
+            description: 'Every project you complete automatically builds your professional portfolio with metrics, achievements,and artifacts.',
         },
         {
             icon: <BiFirstAid />,
-            title: 'AI Teacher',
-            description: 'Learn from an AI coach that adapts to your pace and provides personalized feedback on your project decisions',
+            title: 'Smart Job Tollkit',
+            description: 'Access templates, interview prep, and customized resources to help you land your first (or next) role.',
         },
     ]
 

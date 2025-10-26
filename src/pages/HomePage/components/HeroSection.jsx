@@ -10,7 +10,7 @@ const HeroSection = () => {
                 <div className='grid md:grid-cols-2 gap-4 items-center px-6 py-6'>
                     <div className="space-y-2 md:space-y-4">
                         <h1 className="text-3xl md:text-5xl leading-tight font-bold capitalize">Experience the job before you land it</h1>
-                        <p className="text-lg leading-relaxed text-muted-foreground">Break the Experience barrier with hands-on simulations. build your portfolio and land your dream job</p>
+                        <p className="text-lg leading-relaxed text-muted-foreground">Break the Experience barrier with hands-on simulations. Build your portfolio and land your dream job</p>
                         <div className='mt-10 md:mt-15 space-x-7'>
                             <Button variant='secondary' size='lg' className='bg-[#003399] text-lg text-white hover:bg-blue-800 cursor-pointer mb-4'>Join the waitlist</Button>
                             <Button variant='secondary' size='lg' className='bg-blue-200 text-lg text-[#2A087A] hover:bg-blue-300 cursor-pointer mb-4'>Learn more</Button>

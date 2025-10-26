@@ -30,9 +30,17 @@ const AboutUs = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="relative hidden md:block">
-                        <img src={TeamImage} alt="" className="w-70 absolute top-40 left-10 rounded-lg z-10" />
-                        <img src={LearnersImage} alt="" className="absolute left-60 w-70 rounded-lg" />
+                   <div className='hidden md:block'>
+                        <div className="relative ">
+                            <div className='px-5 w-75 h-75 bg-center font-bold absolute left-10 -top-20 z-10 rounded-lg overflow-hidden bg-no-repeat' style={{
+                                backgroundImage: `url(${TeamImage})`
+                            }}>
+                            </div>
+                            <div className='px-5 w-75 h-75 bg-cover absolute left-70 -top-50 font-bold rounded-lg overflow-hidden bg-no-repeat' style={{
+                                backgroundImage: `url(${LearnersImage})`
+                            }}>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
