@@ -1,25 +1,28 @@
 import React, { useState } from 'react'
 import Logo from '../../../assets/images/turn-logo-transparent.png'
 import { Button } from '../../../components/ui/button'
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu } from "lucide-react"
+// import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+// import { Menu } from "lucide-react"
 
 const Navigation = () => {
     const [isOpen, setIsOpen] = useState(false)
 
+    const toggleMenu = () => setIsOpen(!isOpen);
+    const closeMenu = () => setIsOpen(false);
+
     const navItems = [
-        { name: 'Home', href: '#home' },
+        { name: 'Home', href: '/' },
         { name: 'About', href: '#about' },
-        { name: 'Services', href: '#services' },
-        { name: 'Contact', href: '#contact' },
+        { name: 'Core Features', href: '#feature' },
+        // { name: 'Contact', href: '/contact' },
     ]
 
     return (
-        <nav className='sticky top-0 z-30 backdrop-blur-lg bg-accent'>
+        <nav className='fixed w-full top-0 z-50 bg-white/70 backdrop-blur-md shadow-sm'>
             <div className='max-w-7xl mx-auto md:px-8 px-4 flex justify-between items-center'>
                 {/* Turn Logo */}
                 <div className='shrink-0'>
-                    <img src={Logo} loading='lazy' className='w-18' />
+                    <img src={Logo} className='w-18' />
                 </div>
 
                 {/* Destop Navigation */}
@@ -46,56 +49,60 @@ const Navigation = () => {
                     </div>
                 </div>
 
-                {/* Mobile Menu */}
-                <div className="md:hidden">
-                    <Sheet open={isOpen} onOpenChange={setIsOpen}>
-                        <SheetTrigger asChild>
-                            <button
-                                onClick={() => setIsOpen(true)}
-                                className="flex items-center justify-center h-8 w-8 rounded-2xl bg-transparent hover:bg-gray-100 active:scale-95 transition-all"
+                {/* Hamburger Icon (Mobile) */}
+                <button
+                    onClick={toggleMenu}
+                    className="md:hidden focus:outline-none text-blue-600"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-8 h-8"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                    >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+
+                {/* Mobile Drawer */}
+                <div
+                    className={`fixed top-0 right-0 h-full w-full bg-white/30 backdrop-blur-lg shadow-lg transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"
+                        } z-40`}
+                >
+                    <div className="flex justify-between items-center p-4 border-b border-white/30">
+                        <img src={Logo} className='w-15' />
+                        <button onClick={closeMenu} className="text-[#485d92] focus:outline-none">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="w-8 h-8"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                strokeWidth="2"
                             >
-                                <Menu className="h-10 w-10 text-gray-900" />
-                            </button>
-                        </SheetTrigger>
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
 
-                        <SheetContent
-                            side="top"
-                            className="p-4 bg-white relative"
-                        >
-
-                            {/* Custom big close button */}
-                            <button
-                                onClick={() => setIsOpen(false)}
-                                className="absolute right-6 top-6 flex items-center justify-center h-14 w-14 rounded-xl hover:bg-gray-100 active:scale-95 transition-all z-50"
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    className="h-9 w-9 text-gray-900"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                    strokeWidth={2}
-                                >
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </button>
-
-                            <div className="flex flex-col items-center space-y-6 mt-16">
-                                {navItems.map((link) => (
-                                    <a
-                                        key={link.name}
-                                        href={link.href}
-                                        className="text-lg font-medium text-gray-700 hover:text-gray-900"
-                                        onClick={() => setIsOpen(false)}
-                                    >
-                                        {link.name}
-                                    </a>
-                                ))}
-                                <Button onClick={() => setIsOpen(false)}>Get Started</Button>
-                            </div>
-                        </SheetContent>
-                    </Sheet>
+                    <ul className="flex flex-col space-y-3  bg-[#485d92] text-gray-800 font-medium px-6">
+                        <li><a href="/" onClick={closeMenu} className="hover:text-blue-600">Home</a></li>
+                        <hr className="border-white/30" />
+                        <li><a href="#about" onClick={closeMenu} className="hover:text-blue-600">About</a></li>
+                        <hr className="border-white/30" />
+                        <li><a href="#feature" onClick={closeMenu} className="hover:text-blue-600">Core Features</a></li>
+                        <hr className="border-white/30" />
+                    </ul>
                 </div>
+                {/* Overlay behind the drawer */}
+                {isOpen && (
+                    <div
+                        onClick={closeMenu}
+                        className="fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-300 md:hidden"
+                    />
+                )}
             </div>
         </nav>
     )

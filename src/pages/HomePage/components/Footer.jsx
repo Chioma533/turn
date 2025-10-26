@@ -16,12 +16,12 @@ const Footer = () => {
                 </div>
                 <div className="gap-3 flex items-center justify-baseline">
                     <div className='bg-[#485d92] text-white flex items-center justify-center w-8 h-8 md:w-10 md:h-10  rounded-full shadow-md shadow-secondary-foreground hover:bg-[#485d92] text-lg md:text-2xl transition hover:text-white cursor-pointer hover:mb-0.5'>
-                        <Link to='https://x.com/TURN_2025?t=IyoYO'>
+                        <Link to='https://x.com/TURN_2025?t=IyoYOQiR9PanCsUdALOxHA&s=09'>
                             <FaXTwitter />
                         </Link>
                     </div>
                     <div className='bg-[#485d92] text-white flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full shadow-md shadow-secondary-foreground hover:bg-[#485d92] text-lg md:text-2xl transition hover:text-white cursor-pointer hover:mb-0.5'>
-                        <Link to='https://x.com'>
+                        <Link to='https://www.facebook.com/profile.php?id=61581032177886'>
                             <FaFacebook />
                         </Link>
                     </div>
@@ -31,7 +31,7 @@ const Footer = () => {
                         </Link>
                     </div>
                     <div className='bg-[#485d92] text-white flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full shadow-md shadow-secondary-foreground hover:bg-[#485d92] text-lg md:text-2xl transition hover:text-white cursor-pointer hover:mb-0.5'>
-                        <Link to='https://x.com'>
+                        <Link to='turn9751@gmail.com'>
                             <HiOutlineMail />
                         </Link>
                     </div>

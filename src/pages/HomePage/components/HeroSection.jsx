@@ -5,7 +5,7 @@ import Image2 from '../../../assets/images/team-growth1.5.jpg'
 
 const HeroSection = () => {
     return (
-        <section className='relative overflow-hidden py-10 md:py-25 bg-accent flex items-center'>
+        <section className='relative overflow-hidden py-20 mt-12 md:py-25 bg-accent flex items-center'>
             <div className='w-7xl mx-auto px-4 sm:px-6'>
                 <div className='grid md:grid-cols-2 gap-4 items-center px-6 py-6'>
                     <div className="space-y-2 md:space-y-4">

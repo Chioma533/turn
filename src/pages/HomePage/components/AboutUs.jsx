@@ -3,7 +3,7 @@ import TeamImage from '../../../assets/images/team-work.jpg'
 import LearnersImage from '../../../assets/images/learners.jpg'
 const AboutUs = () => {
     return (
-        <section className='bg-[#485d92]'>
+        <section className='bg-[#485d92]' id='about'>
             <div className='max-w-7xl mx-auto px-2 md:px-8 py-10'>
                 <h2 className='text-3xl md:text-4xl font-bold text-center mb-4'>About Us</h2>
                 <div className='grid lg:grid-cols-2 items-center md:space-x-20'>
