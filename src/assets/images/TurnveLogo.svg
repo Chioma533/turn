@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2021 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="3.01002in" height="0.786551in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2951.72 771.32"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <font id="FontID0" horiz-adv-x="643" font-variant="normal" style="fill-rule:nonzero" font-style="italic" font-weight="400">
+	<font-face 
+		font-family="Coolvetica">
+		<font-face-src>
+			<font-face-name name="Coolvetica Italic"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="E" horiz-adv-x="532" d="M526.999 0l20.9991 118.001 -368.998 0 29.9987 170.997 325.001 0 20.9991 117 -325.001 0 25.0005 142 353.002 0 20.0022 116.003 -488.001 0 -117 -664.001 503.997 0z"/>
+   <glyph unicode="N" horiz-adv-x="591" d="M563.999 0l117 664.001 -130.001 0 -74.9967 -427.002 -193.002 427.002 -142.997 0 -117 -664.001 128.999 0 78.9981 445.998 208.999 -445.998 124.001 0z"/>
+   <glyph unicode="R" horiz-adv-x="578" d="M433.998 548.999c59.0005,0 82.9995,-14.9993 82.9995,-71 0,-57.999 -31.997,-106.002 -118.998,-106.002l-174.002 0 31.0002 177.002 179 0zm112.001 -548.999l32.9986 188c2.99987,17.0024 5.0029,32.9986 5.0029,45.9996 0,45.9996 -20.0022,69.0017 -63.0019,84.001 81.0011,26.9988 130.001,100.999 130.001,183.998 0,94.0021 -65.0003,162.002 -174.002,162.002l-336.996 0 -117 -664.001 134.999 0 45.9996 260.001 148 0c66.0018,0 90.9976,-11.9995 90.9976,-57.0022 0,-8.99961 -0.996836,-19.9976 -2.99987,-31.997l-29.9987 -171.002 136 0z"/>
+   <glyph unicode="U" horiz-adv-x="585" d="M455.002 220.998c-15.004,-86.9962 -67.0033,-128.999 -156.003,-128.999 -62.9972,0 -99.0004,26.9988 -99.0004,91.9991 0,13.001 1.00152,27.0035 4.00139,42.0028l76.9998 438 -140.999 0 -79.0028 -451.001c-3.99671,-20.0022 -5.99974,-39.9998 -5.99974,-57.0022 0,-120.996 85.0025,-179 226.001,-179 174.002,0 288.001,83.0042 316.002,244l77.9966 443.002 -142 0 -77.9966 -443.002z"/>
+   <glyph unicode="V" horiz-adv-x="593" d="M359.001 0l341.999 664.001 -148 0 -226.001 -466 -63.0019 466 -143.998 0 108 -664.001 131.002 0z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Coolvetica";font-variant:normal;font-style:italic;font-weight:normal;src:url("#FontID0") format(svg)}
+    .str0 {stroke:#003399;stroke-width:6.81;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.61313}
+    .fil0 {fill:black}
+    .fil1 {fill:#003399}
+    .fnt0 {font-style:italic;font-weight:normal;font-size:824.95px;font-family:'Coolvetica'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <text x="496.66" y="752.34"  class="fil0 fnt0">URNVE</text>
+  <path class="fil1 str0" d="M3.41 3.41l774.39 0 -774.39 173.34 0 -173.34zm290.98 163.03l-0.07 585.56 192.65 -631.15 -192.58 45.59z"/>
+ </g>
+</svg>

@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Logo from '../../../assets/images/turn-logo-transparent.png'
 import { Button } from '../../../components/ui/button'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 // import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 // import { Menu } from "lucide-react"
 
 const Navigation = () => {
-    const [isOpen, setIsOpen] = useState(false)
-
+    const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => setIsOpen(!isOpen);
     const closeMenu = () => setIsOpen(false);
 
@@ -39,12 +40,14 @@ const Navigation = () => {
                                     </a>
                                 </li>
                             ))}
+                            <Link to='/waitlist'>
                             <Button
                                 variant="secondary"
                                 className='bg-[#003399] cursor-pointer text-white font-semibold hover:bg-blue-800 ml-4'
                             >
                                 Join the Waitlist
                             </Button>
+                            </Link>
                         </ul>
                     </div>
                 </div>
