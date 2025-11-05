@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../../assets/images/turn-logo-transparent.png'
+import Logo from '../../../assets/images/TurnveLogo2.svg'
 import { Button } from '../../../components/ui/button'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
@@ -20,10 +20,10 @@ const Navigation = () => {
 
     return (
         <nav className='fixed w-full top-0 z-50 bg-white/70 backdrop-blur-md shadow-sm'>
-            <div className='max-w-7xl mx-auto md:px-8 px-4 flex justify-between items-center'>
+            <div className='max-w-7xl mx-auto md:px-8 px-4 py-4 flex justify-between items-center'>
                 {/* Turn Logo */}
                 <div className='shrink-0'>
-                    <img src={Logo} className='w-18' />
+                    <img src={Logo} className='w-20' />
                 </div>
 
                 {/* Destop Navigation */}
@@ -40,7 +40,7 @@ const Navigation = () => {
                                     </a>
                                 </li>
                             ))}
-                            <Link to='/waitlist'>
+                            <Link to='/join'>
                             <Button
                                 variant="secondary"
                                 className='bg-[#003399] cursor-pointer text-white font-semibold hover:bg-blue-800 ml-4'

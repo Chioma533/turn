@@ -17,7 +17,7 @@ const HowItWorks = () => {
                 <h2 className='text-4xl font-bold text-center mb-4'>How It Works</h2>
                 <p className='text-medium md:text-2xl leading-tight text-center text-muted foreground mb-12'>
                     You need experience to get hired, but you need to get hired to gain experience.
-                    TURN breaks
+                    TURNVE breaks
                     the cycle by providing real world experience through interactive simulations.
                 </p>
                 <div className=' grid md:grid-cols-2 mb-10 gap-10 md:gap-40'>

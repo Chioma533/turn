@@ -1,5 +1,5 @@
 import React from 'react'
-import TurnLogo from '../../../assets/images/turn-logo-transparent.png'
+import TurnLogo from '../../../assets/images/TurnveLogo2.svg'
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa6";
 import { FiLinkedin } from "react-icons/fi";
@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <section className='bg-[#ffffff]'>
-            <div className="max-w-7xl mx-auto md:px-8 flex justify-between">
+            <div className="max-w-7xl mx-auto md:px-8 px-2 py-2 flex justify-between">
                 <div className="w-20">
                     <img src={TurnLogo} alt="" className='w-20 ' />
                 </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from '../../../components/ui/button'
 import Image1 from '../../../assets/images/HeroImage1.5.jpg'
 import Image2 from '../../../assets/images/team-growth1.5.jpg'
+import { Link } from 'react-router-dom'
 
 const HeroSection = () => {
     return (
@@ -12,8 +13,12 @@ const HeroSection = () => {
                         <h1 className="text-3xl md:text-5xl leading-tight font-bold capitalize">Experience the job before you land it</h1>
                         <p className="text-lg leading-relaxed text-muted-foreground">Break the Experience barrier with hands-on simulations. Build your portfolio and land your dream job</p>
                         <div className='mt-10 md:mt-15 space-x-7'>
-                            <Button variant='secondary' size='lg' className='bg-[#003399] text-lg text-white hover:bg-blue-800 cursor-pointer mb-4'>Join the waitlist</Button>
-                            <Button variant='secondary' size='lg' className='bg-blue-200 text-lg text-[#2A087A] hover:bg-blue-300 cursor-pointer mb-4'>Learn more</Button>
+                            <Link to={"/join"}>
+                                <Button variant='secondary' size='lg' className='bg-[#003399] text-lg text-white hover:bg-blue-800 cursor-pointer mb-4'>Join the waitlist</Button>
+                            </Link>
+                            <Link>
+                                <Button variant='secondary' size='lg' className='bg-blue-200 text-lg text-[#2A087A] hover:bg-blue-300 cursor-pointer mb-4'>Learn more</Button>
+                            </Link>
                         </div>
                     </div>
                     <div className='hidden md:block'>
