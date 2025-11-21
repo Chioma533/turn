@@ -40,7 +40,7 @@ const Navigation = () => {
                                     </a>
                                 </li>
                             ))}
-                            <Link to='/join'>
+                            <Link to='/waitlist'>
                             <Button
                                 variant="secondary"
                                 className='bg-[#003399] cursor-pointer text-white font-semibold hover:bg-blue-800 ml-4'
