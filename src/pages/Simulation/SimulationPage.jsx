@@ -1,0 +1,48 @@
+import React, { useState } from 'react'
+import SimulationLayout from '../../components/layouts/SimulationLayout';
+import Sidebar from '../../components/layouts/Sidebar';
+
+const SimulationPage = () => {
+    const [activeTab, setActiveTab] = useState('simulation');
+
+    return (
+        <div className="flex h-screen bg-slate-50 overflow-hidden">
+            <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
+            <main className="flex-1 overflow-y-auto">
+                {activeTab === 'simulation' && <SimulationLayout />}
+                {activeTab === 'dashboard' && (
+                    <div className="p-8">
+                        <h1 className="text-3xl font-bold text-slate-900">Dashboard</h1>
+                        <p className="text-slate-600 mt-2">Dashboard content...</p>
+                    </div>
+                )}
+                {activeTab === 'portfolio' && (
+                    <div className="p-8">
+                        <h1 className="text-3xl font-bold text-slate-900">Portfolio</h1>
+                        <p className="text-slate-600 mt-2">Portfolio content...</p>
+                    </div>
+                )}
+                {activeTab === 'ai-coach' && (
+                    <div className="p-8">
+                        <h1 className="text-3xl font-bold text-slate-900">AI Coach</h1>
+                        <p className="text-slate-600 mt-2">AI Coach content...</p>
+                    </div>
+                )}
+                {activeTab === 'profile' && (
+                    <div className="p-8">
+                        <h1 className="text-3xl font-bold text-slate-900">Profile</h1>
+                        <p className="text-slate-600 mt-2">Profile content...</p>
+                    </div>
+                )}
+                {activeTab === 'pricing' && (
+                    <div className="p-8">
+                        <h1 className="text-3xl font-bold text-slate-900">Pricing</h1>
+                        <p className="text-slate-600 mt-2">Pricing content...</p>
+                    </div>
+                )}
+            </main>
+        </div>
+    );
+}
+
+export default SimulationPage
