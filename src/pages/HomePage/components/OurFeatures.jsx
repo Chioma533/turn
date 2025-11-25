@@ -53,7 +53,7 @@ const OurFeatures = () => {
                 <div className="text-center pt-20 space-y-4">
                     <p className="text-gray-500 text-shadow-md text-medium md:text-lg">Built by early stage founders</p>
                     <h2 className="text-lg md:text-2xl font-medium">Join a  100+ others on the waitlist</h2>
-                    <Link to={"/dashboard"}>
+                    <Link to={"/waitlist"}>
                         <Button
                             variant="secondary"
                             className='bg-[#003399] cursor-pointer text-white font-semibold hover:bg-blue-800 mt-4'
